@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/6bb16f3aff.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>Niteesh</span> <br />From India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- --- about --- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/user.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Hello guys, this is Niteesh. I'm from Gudivada, Andhra Pradesh.
+              I'm a Computer science student. I did my schooling and
+              intermediate from home town. Currently i'm pursuing B.Tech from
+              VIT-AP University. I'm good at python and java. My hobbies are
+              watching anime, playing cricket, Listening music and Learning new
+              things.
+            </p>
+            <div class="titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Designing Web pages</li>
+                <li><span>Deep Learning</span><br />Image Recognition</li>
+                <li>
+                  <span>App Development</span><br />Designing App interfaces
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Iam Neo</span><br />Learned JAVA Full Stack</li>
+                <li><span>Ethnus</span><br />Learned MERN Full Stack</li>
+                <li>
+                  <span>Bharat Intern</span><br />Learned Basics of Web
+                  Development
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>B.tech (2021-2025)</span><br />VIT-AP University</li>
+                <li>
+                  <span>12th (2019-2021)</span><br />Narayana Junior College
+                </li>
+                <li><span>10th (2019)</span><br />Montessori High School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --- skills --- -->
+    <div id="skills">
+      <div class="container">
+        <h1 class="subtitle">My Skills</h1>
+        <div class="skills-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              nostrum qui cupiditate enim maiores fuga accusantium quibusdam
+              voluptate dolor sed, asperiores, quas, magni saepe nemo. Dolorem,
+              earum. Cumque, autem ad!
+            </p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              nostrum qui cupiditate enim maiores fuga accusantium quibusdam
+              voluptate dolor sed, asperiores, quas, magni saepe nemo. Dolorem,
+              earum. Cumque, autem ad!
+            </p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-robot"></i>
+            <h2>Deep Learning</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              nostrum qui cupiditate enim maiores fuga accusantium quibusdam
+              voluptate dolor sed, asperiores, quas, magni saepe nemo. Dolorem,
+              earum. Cumque, autem ad!
+            </p>
+            <a href="">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --- portfolio --- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Online Banking Website</h3>
+              <p>
+                Designed and developed a user-friendly online banking platform
+                to enhance customer experiences and streamline financial
+                transactions.
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.jpg" alt="" />
+            <div class="layer">
+              <h3>Bird Species Recogition</h3>
+              <p>
+                Applied deep learning techniques to create a bird species
+                classification system, helping to identify and categorize
+                various bird species from images.
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Portfolio Website</h3>
+              <p>
+                Designed and built my portfolio website to showcase my skills,
+                experiences, and projects in an engaging and user-friendly
+                manner.
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- --- contact --- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> niteeshch57@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 7981947819</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/niteesh.ch.1/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FNiteesh057"><i class="fa-brands fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/niteesh_ch57/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/niteesh-chagantipati-1420b4249/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/14T7_q0DrZs6-CdtXf1qtbduoUjymh6Tp/view?usp=sharing" class="btn btn2">View Resume</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <!-- -- copy right --  -->
+      <div class="copyright">
+        <p>Made by <i class="fa-solid fa-bolt"></i> Niteesh CH</p>
+      </div>
+    </div>
+    <script src="port.js"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzH4P3ZprC66CEe_Y7TNmW51k-LwIZfBAOtJXCsP6LgoDJWBCCJyy58xClpTrvYDS0s/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+      
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },2000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
